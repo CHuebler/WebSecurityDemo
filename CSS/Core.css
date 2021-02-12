@@ -1,0 +1,137 @@
+/***** Tags *****/
+body{
+  margin:0;
+  padding:0;
+  min-width:800px;
+  background-color:#f2f2f2;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+
+}
+
+code{
+  border-style:inset;
+  background-color:#000000;
+  color:#33cc33;
+  padding:5px;
+  display: block;
+  white-space: pre-wrap
+}
+
+
+/***** Core Area *****/
+#PageContent{
+  margin-top:0;
+  margin:0;
+  padding:0;
+  width:100%;
+  text-align:center;
+  background-color:white;
+  overflow:auto;
+  font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  flex: 1;
+}
+
+/***** Components *****/
+.card{
+  width:200px;
+  height:300px;
+  text-align:center;
+  background-color:#bfbfbf;
+  color:black;
+  padding:15px;
+  margin:20px;
+  border-radius:10px;
+  border:2px solid black;
+  box-shadow: 5px 5px 15px #666666;
+}
+
+.card:hover{
+  background-color:#d9d9d9;
+}
+
+.standardFormat{
+  text-align:left;
+}
+
+.title{
+  font-size: xx-large;
+  font-weight: bold;
+  font-family:Georgia, serif;
+  text-decoration: underline;
+  display:block;
+}
+
+.subTitle{
+  font-size:x-large;
+  font-weight:bold;
+  font-family:Georgia, serif;
+  display:block;
+}
+
+.vulnDescription{
+  margin:auto;
+  width:75%;
+  padding:15px;
+}
+/***** Utilities *****/
+.textCentered{
+  text-align: center;
+}
+
+.centerAlignItems{
+  display: flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content: center;
+}
+
+.inlnie{
+  display:inline-block;
+}
+
+.fadeIn{
+  animation: fadeInAnimation 1s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes fadeInAnimation{
+  from  { opacity: 0; }
+  to    { opacity: 1; }
+}
+
+img.coverPhoto{
+  margin:0;
+  padding:0;
+  width:100%;
+}
+
+img.avatar{
+  height:5em;
+  border-radius:50%;
+}
+
+a.highlight{
+  text-decoration:none;
+  color:blue;
+  text-decoration:underline;
+  animation-name:colorCycle;
+  animation-duration:5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes colorCycle{
+  0%{color: blue;}
+  25%{color: green;}
+  75%;{color:blue;}
+}
+
+.bold{
+  font-weight:bold;
+}

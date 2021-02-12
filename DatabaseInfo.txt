@@ -1,0 +1,16 @@
+First, create a database named WebSecurity in your phpmyadmin. Below is the following information you will need to configure your tables.
+
+Database Name: WebSecurity
+
+Default Account Information:
+Username: root
+Password: -no password-
+
+Table: Employees
+Columns: ID, First Name, Last Name, SSN, Salary, EMail
+SQL To Generate: CREATE TABLE `WebSecurity`.`Employees` ( `ID` DOUBLE NOT NULL AUTO_INCREMENT , `First Name` VARCHAR(512) NOT NULL , `Last Name` VARCHAR(512) NOT NULL , `SSN` INT NOT NULL , `Salary` INT NOT NULL , `Email` VARCHAR(512) NOT NULL , `Password` VARCHAR(512) NOT NULL, PRIMARY KEY (`ID`)) ENGINE = InnoDB;
+
+SQL to generate test data quickly:
+INSERT INTO `Employees` (`First Name`, `Last Name`, `SSN`, `Salary`, `Email`, `Password`) VALUES ('test1','last1','123121234','1000000','test1@email.com','password');
+INSERT INTO `Employees` (`First Name`, `Last Name`, `SSN`, `Salary`, `Email`, `Password`) VALUES ('test2','last2','123121234','1000000','test2@email.com','password');
+INSERT INTO `Employees` (`First Name`, `Last Name`, `SSN`, `Salary`, `Email`, `Password`) VALUES ('test3','last3','123121234','1000000','test3@email.com','password');

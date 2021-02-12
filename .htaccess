@@ -1,0 +1,32 @@
+#Error Redirects
+ErrorDocument 404 /PageNotFound
+
+RewriteEngine On
+
+#General Rewrites
+RewriteRule ^About/?$ about.php [NC]
+RewriteRule ^Legal/?$ legal.php [NC]
+RewriteRule ^NoAccess/?$ NoAccess.php [NC]
+RewriteRule ^Requirements/?$ Requirements.php [NC]
+RewriteRule ^PageNotFound/?$ PageNotFound.php [NC]
+
+#Employee Access Rewrites
+RewriteRule ^Employees/?$ Employees/index.php [NC]
+RewriteRule ^Employees/Register/?$ Employees/Register.php [NC]
+RewriteRule ^Employees/Login/?$ Employees/Login.php [NC]
+RewriteRule ^Employees/Logout/?$ Employees/Logout.php [NC]
+RewriteRule ^Employees/View/?$ Employees/View.php [NC]
+RewriteRule ^Employees/Account/?$ Employees/Account.php [NC]
+
+#Developer Area Rewrites
+RewriteRule ^Developers/?$ Developers/index.php [NC]
+RewriteRule ^Developers/Injection/?$ Developers/Injection.php [NC]
+RewriteRule ^Developers/Authentication/?$ Developers/Authentication.php [NC]
+RewriteRule ^Developers/XSS/?$ Developers/CrossSiteScripting.php [NC]
+RewriteRule ^Developers/DirectObject/?$ Developers/DirectObject.php [NC]
+RewriteRule ^Developers/SecurityConfiguation/?$ Developers/SecurityMisconfiguration.php [NC]
+RewriteRule ^Developers/DataExposure/?$ Developers/DataExposure.php [NC]
+RewriteRule ^Developers/AccessControl/?$ Developers/AccessControl.php [NC]
+RewriteRule ^Developers/CSRF/?$ Developers/CrossSiteRequestForgery.php [NC]
+RewriteRule ^Developers/Components/?$ Developers/Components.php [NC]
+RewriteRule ^Developers/Redirects/?$ Developers/UnvalidatedRedirects.php [NC]
